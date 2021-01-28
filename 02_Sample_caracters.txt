@@ -1,0 +1,28 @@
+&doctype=table
+
+> - ------ SAMPLE SUGGESTED CARACTERS ---------- - <
+> - --- you may use your own ones instead -------- - <
+
+> - the case doesn't matters - <
+
+@TABLE
+&line
+WMS	;	UNICODE	:
+&line
+&amp	;	&	:
+&hash	;	#	:
+&>	;	>	:
+&<	;	<	:
+&at	;	@	:
+&pc	;	%	:
+> - ------------------- - <
+> -        Arrows       - <
+> - ------------------- - <
+&->	;	→	:   > - rightarrow - < 
+&<-	;	←	:   > - leftarrow - < 
+&<->	;	↔	:   > - leftrightarrow - < 
+&<=	;	⇐	:   > - double left arrow - < 
+&=>	;	⇒	:   > - double right arrow - < 
+&<=>	;	⇔	:   > - double left-right arrow - <
+&line
+%TABLE

@@ -1,0 +1,251 @@
+@WMS_VERSION 1.0 %WMS_VERSION @ENC UTF-8 %ENC
+
+@DOCTYPE tabular %DOCTYPE
+
+> - --------------------------------------------------------------------------------- - <
+> -     This file was generated on 11:00 2021-01-25 __ by Akpoué Kouamé Josué         - <
+> -				     						      - <
+> -                            File version: 1.0                     		      - <
+> - 										      - <
+> -				     * * *					      - <
+> - 										      - <
+> -  It lists the elements used in different document types and their respective tags - <
+> -  doctypes not written in full caps can't be converted for the moment.             - <
+> - --------------------------------------------------------------------------------- - < 
+
+@SHEET
+
+> - --------------------------- - <
+> - Parameters setting elements - <
+> - --------------------------- - <
+
+@TABLE
+@CAPTION Parameters setting elements %CAPTION
+@ROWS
+&line
+Element				;	Short tag	;	Long tag 	;	XML		;	TeX			:
+&line
+Version of the markup		;	WMS_VERSION	;	WMS_VERSION	;	wms version=""	;	comment: wms version	:
+Encoding of the document	;	ENC		;	ENCODING	;	encoding=""	;	%!TeX encoding=		:
+Document type			;	DOCTYPE		;	DOCTYPE		;	(DTD assoc.)	;	commented		:	
+Version of the document type	;	VERSION		;	VERSION		;	version=""	;	version (comment)	:
+&line
+%ROWS
+%TABLE
+
+> - ----------------- - <
+> - doctype: DATAFILE - <
+> - ----------------- - <
+
+@TABLE
+@CAPTION Datafile elements %CAPTION
+@ROWS
+&line
+Element			;	Short tag	;	Long tag 	;	XML		;	TEX		:
+&line
+Datafile		;	DF		;	DATAFILE	;	datafile	;	datafile*	: > - "*" marks environments - <
+Metadata		;	MD		;	METADATA	;	metadata	;	metadata*	:  
+Topic			;	TO		;	TOPIC		;	topic		;	topic		: 
+Language (name)		;	LG		;	LANGUAGE	;	language	;	language	: 
+Language (iso code)	;	ISO		;	ISO		;	iso		;	iso		: 
+Speaker's name		;	CN		;	CONSULTANT_NAME	;	consultant_name	;	cname		: 
+Speaker's informations	;	CI		;	CONSULTANT_INFO	;	consultant_info	;	cinfo		: 
+Researcher (intervwr)	;	RS		;	RESEARCHER	;	researcher	;	researcher	: 
+Date of collection	;	DT		;	DATE		;	date		;	time		: 	
+Datafile ID		;	DID		;	DATAFILE_ID	;	ID		;	ID		: 
+Dataset			;	DS		;	DATASET		;	dataset		;	dataset*	: 
+Dataset section level 1 ;	T1		;	/		;	tile level="1"	;	section		: > - (sub)sections are another kind of metadata informations. They just inform the reader about what are the data to follow - <
+Dataset section level 2 ;	T2		;	//		;	tile level="2"	;	subsection	: 
+Dataset section level 3 ;	T3		;	///		;	tile level="3"	;	subsubsection	: 
+Dataset section level 4 ;	T4		;	////		;	tile level="4"	;	paragraph	:
+Dataset section level 5 ;	T5		;	/////		;	tile level="5"	;	subparagraph	: > - virtually WMS allows you to multiply infinitely the levels of sectionning. But for each of these levels, you need to be sure there is an equivalent XML element of TeX sectionning command. - <
+Data			;	DA		;	DATA		;	data		;	data*		: 
+Label			;	L		;	LABEL		;	label		;	label		: 
+Context			;	CT		;	CONTEXT		;	context		;	ct		: 
+Response task		;	TA		;	TASK		;	task		;	ta		: 
+Linguistic Expression	;	LE		;	LING_EXPR	;	ling_expr	;	lexp*		: 
+Morphemes		;	MB		;	MORPH		;	morph		;	mb 		: > - For_TeX %MB=\\ - <
+Gloss			;	GE		;	GLOSS		;	gloss		;	ge		: > - For_TeX %GE=\\ - <
+Abbrev. of gram. cat.	;	G		;	GRAM		;	gram		;	gram  		: > - AddToPreamble \let\gram\acrshort\relax% - <
+Morph. of unknown cat.	;	U		;	UM		;	um		;	um 		: > - AddToPreamble \let\um\textsc\relax - <
+Free translation	;	FT		;	FREE_TRANS	;	free_trans	;	ft		: 
+Litteral translation	;	LT		;	LITER_TRANS	;	liter_trans	;	lt		: 
+Response to a task	;	RE		;	RESPONSE	;	response	;	re 		: 
+Line break (for Tex)	;	br		;	br		;	<br/>		;	\\		: 
+Speaker's comment	;	CM		;	COMMENT		;	comment		;	comment		:
+Data ID			;	ID		;	ID		;	data_id		;	id		:
+Researcher's note	;	NT		;	NOTE		;	note		;	note		: 
+&line
+%ROWS
+%TABLE
+
+> - ---------------------- - <
+> - doctype: QUESTIONNAIRE - <
+> - ---------------------- - <
+
+@TABLE
+@CAPTION Questionnaire's elements %CAPTION
+@ROWS
+&line
+Element				;	Short tag	;	Long tag 		;	XML		;	TeX		:
+&line
+Questionnaire 			;	QST		;	QUESTIONNAIRE		;	questionnaire	;	questionnaire*	:
+Metadata			;	MD		;	METADATA		;	metadata	;	metadata*	:
+Title				;	T0		;	TITLE			;	title		;	title		:
+Topic				;	TO		;	TOPIC			;	topic		;	topic		:
+Author				;	AU		;	AUTHOR			;	author		;	author		:
+Version				;	VER		;	VERSION			;	version		;	version		:
+Date				;	DT		;	DATE			;	date		;	date		:
+Target of the questionnaire	;	QT		;	QUEST_TARGET		;	quest_target	;	qtarget*	:	
+Introductory sections		;	ISS		;	INTRO_SECTIONS		;	intro_sections	;	introsections*	:
+Introductory section		;	IS		;	INTRO_SECTION		;	intro_section	;	section		:	
+Sessions (set)			;	SNS		;	SESSIONS		;	sessions	;	sessions*	:
+Session				;	SN		;	SESSION			;	session		;	session*	:
+Flexibility parameter		;	FL		;	FLEXIBILITY		;	flexibility	;	flexibility	:
+Session type:adaptable		;	adap		;	adaptable		;	adaptable	;	adapt		:
+Session type:flexible		;	flex		;	flexible		;	flexible	;	flex		:
+Session's ID			;	SID		;	SESSION_ID		;	session_id	;	sessid		:
+Session's label			;	LIB		;	LIBELLE			;	libelle		;	libelle		:
+Session's label			;	SL		;	SESSION_LABEL		;	session_label	;	libelle		:
+Session's target		;	TG		;	TARGET			;	target		;	target*		:
+Details				;	DET		;	DETAILS			;	details		;	details*	:
+Rationale			;	RA		;	RATIONALE		;	rationale	;	rationale*	:
+Materials			;	MATS		;	MATERIALS		;	materials	;	materials*	:
+Material			;	MAT		;	MATERIAL		;	material	;	material*	:
+Common task to a set of mater.	;	CTA		;	COMMON_TASK		;	common_task	;	cotask		:
+Task				;	TSK		;	TASK			;	task		;	task		:
+Context				;	CT		;	CONTEXT			;	context		;	ct		:
+Response task			;	TA		;	RESPONSE_TASK		;	response_task	;	ta		:
+Object language expression	;	LE		;	OBJ_LANG_EXPR		;	obj_lang_expr	;	olexpr		:
+Morphemes			;	MB		;	MORPH			;	morph		;	mb 		: > - For_TeX %MB=\\ - <
+Gloss				;	GE		;	GLOSS			;	gloss		;	ge		: > - For_TeX %GE=\\ - <
+Abbrev. of gram. cat.		;	G		;	GRAM			;	gram		;	gram  		: > - AddToPreamble \let\gram\acrshort\relax% - <
+Morph. of unknown cat.		;	U		;	UM			;	um		;	um 		: > - AddToPreamble \let\um\textsc\relax - <
+Free translation		;	FT		;	FREE_TRANS		;	free_trans	;	ft		: 
+Litteral translation		;	LT		;	LITER_TRANS		;	liter_trans	;	lt		: 
+Questionnaire section level 1 	;	T1		;	/			;	tile level="1"	;	section		: > - (sub)sections are another kind of metadata informations. They just inform the reader about what are the data to follow - <
+Questionnaire section level 2 	;	T2		;	//			;	tile level="2"	;	subsection	: 
+Questionnaire section level 3 	;	T3		;	///			;	tile level="3"	;	subsubsection	: 
+Questionnaire section level 4 	;	T4		;	////			;	tile level="4"	;	paragraph	:
+Questionnaire section level 5 	;	T5		;	/////			;	tile level="5"	;	subparagraph	: > - virtually WMS allows you to multiply infinitely the levels of sectionning. But for each of these levels, you need to be sure there is an equivalent XML element of TeX sectionning command. - <
+Questionnaire item		;	I		;	ITEM			;	quest_item	;	qitem*		: 
+Questionnaire item label	;	L		;	LABEL			;	label		;	label		: 
+Context				;	CT		;	CONTEXT			;	context		;	ct		: 
+Response task			;	TA		;	TASK			;	task		;	ta		: 
+Label of section		;	LS		;	LABEL_SECTION		;	label_section	;	label		: 
+Paragraph (normal text)		;	P		;	PARAGRAPH		;	p		;	> - nothing - <	:
+First item of a list		;	1		;	FIRST_ITEM		;	item*		;	firstitem	: > - For_TeX @1=\begin{itemize} \item _=_ %1 (nothing) __ * For_XML @1=<list> <item> _=_ %1 </item> - <
+Item of a (numbered) list	;	-		;	ITEM			;	item		;	item		: 
+First item of an enumeration	;	1N		;	FIRST_NUM_ITEM		;	item*		;	firstnumitem	: > - For_TeX @1=\begin{enumerate} \item _=_ %1 (nothing) __ * For_XML @1=<num_list> <item> _=_ %1 </item> - < 
+End of a list			;	lend		;	listend			;	list (end)*	;	endlist		: > - For_TeX AddPreamble \newcommand\endlist{\end{itemize} __ * For_XML </num_list> - < 	
+End of a numbered list		;	nlend		;	numlistend		;	num_list (end)*	;	endnumlist	: > - For_TeX AddPreamble \newcommand\endlist{\end{itemize} __ * For_XML </num_list> - <
+Confer				;	R		;	CF			;	cf		;	cf		: > - Cross reference, ForTeX: AddToPreamble: \def\cf#1{see \ref{#1}} - <
+Confer section			;	RS		;	CF_S			;	cf_section	;	cfs		: > - Cross reference to a section, ForTeX: AddToPreamble: \def\cfs#1{see \S\ref{#1}} - <		
+Confer next 			; 	RN 		; 	CF_NEXT			;	cf_next		;	cfnext		: > - cross reference to the next element whose tag is ..., > - ForTeX: AddPreamble: \providecommand{\cfnext}[1]{\refstepcounter{#1}} - < 
+> - ------------------------------------------------ - <
+> - The following element tags are control sequences - <
+> - ------------------------------------------------ - <
+See above 			; 	_^		;	CF_ABOVE		;	cf_above	;	seeabove	: > - stuff explained above, > - ForTeX: AddPreamble: \newcommand{\seeabove}{see above} - <   
+See previous stuff 		; 	_<		;	CF_PREV			;	cf_prev		;	seeprev		: > - syn: see above - <
+See later 			;	_> 		;	CF_LATER		;	cf_later	;	seelater	:  > - stuff explained later, > - ForTeX: AddPreamble: \newcommand{\seelater}{explained later} - <
+See bellow 			; 	_ 		;	CF_BELLOW		;	cf_bellow	;	seebellow	: > - stuff explained bellow, > - ForTeX: AddPreamble: \newcommand{\seeabove}{see bellow} - <  
+&line
+%ROWS
+%TABLE
+
+
+> - ------------------- - <
+> - doctype: manuscript - <
+> - ------------------- - <
+
+@TABLE
+@CAPTION Manuscript's elements %CAPTION
+@ROWS
+&line
+Element				;	Short tag	;	Long tag 		;	XML		;	TEX		:
+&line
+Manuscript			;	MS		;	MANUSCRIPT		;	manuscript	;	ms (env)	:
+Section level 1 		;	T1		;	/			;	tile level="1"	;	section		: > - (sub)sections are another kind of metadata informations. They just inform the reader about what are the data to follow - <
+Section level 2 		;	T2		;	//			;	tile level="2"	;	subsection	: 
+Section level 3 		;	T3		;	///			;	tile level="3"	;	subsubsection	: 
+Section level 4 		;	T4		;	////			;	tile level="4"	;	paragraph	:
+Section level 5 		;	T5		;	/////			;	tile level="5"	;	subparagraph	: > - virtually WMS allows you to multiply infinitely the levels of sectionning. But for each of these levels, you need to be sure there is an equivalent XML element of TeX sectionning command. - <
+Element's label			;	L		;	LABEL			;	label		;	label		: 
+Label of section		;	LS		;	LABEL_SECTION		;	label_section	;	label		: 
+Paragraph (normal text)		;	P		;	PARAGRAPH		;	p		;	> - nothing - <	:
+First item of a list		;	1		;	FIRST_ITEM		;	item*		;	firstitem	: > - For_TeX @1=\begin{itemize} \item _=_ %1 (nothing) __ * For_XML @1=<list> <item> _=_ %1 </item> - <
+Item of a (numbered) list	;	-		;	ITEM			;	item		;	item		: 
+First item of an enumeration	;	1N		;	FIRST_NUM_ITEM		;	item*		;	firstnumitem	: > - For_TeX @1=\begin{enumerate} \item _=_ %1 (nothing) __ * For_XML @1=<num_list> <item> _=_ %1 </item> - < 
+End of a list			;	lend		;	listend			;	list (end)*	;	endlist		: > - For_TeX AddPreamble \newcommand\endlist{\end{itemize} __ * For_XML </num_list> - < 	
+End of a numbered list		;	nlend		;	numlistend		;	num_list (end)*	;	endnumlist	: > - For_TeX AddPreamble \newcommand\endlist{\end{itemize} __ * For_XML </num_list> - <
+Confer				;	R		;	CF			;	cf		;	cf		: > - Cross reference, ForTeX: AddToPreamble: \def\cf#1{see \ref{#1}} - <
+Confer section			;	RS		;	CF_S			;	cf_section	;	cfs		: > - Cross reference to a section, ForTeX: AddToPreamble: \def\cfs#1{see \S\ref{#1}} - <		
+Confer next 			; 	RN 		; 	CF_NEXT			;	cf_next		;	cfnext		: > - cross reference to the next element whose tag is ..., > - ForTeX: AddPreamble: \providecommand{\cfnext}[1]{\refstepcounter{#1}} - < 
+> - ------------------------------------------------ - <
+> - The following element tags are control sequences - <
+> - ------------------------------------------------ - <
+See above 			; 	_^		;	CF_ABOVE		;	cf_above	;	seeabove	: > - stuff explained above, > - ForTeX: AddPreamble: \newcommand{\seeabove}{see above} - <   
+See previous stuff 		; 	_<		;	CF_PREV			;	cf_prev		;	seeprev		: > - syn: see above - <
+See later 			;	_> 		;	CF_LATER		;	cf_later	;	seelater	:  > - stuff explained later, > - ForTeX: AddPreamble: \newcommand{\seelater}{explained later} - <
+See bellow 			; 	_ 		;	CF_BELLOW		;	cf_bellow	;	seebellow	: > - stuff explained bellow, > - ForTeX: AddPreamble: \newcommand{\seeabove}{see bellow} - <  
+Table				;	TBL		;	TABLE			;	table		;	tabular (env)	:
+Caption				;	CAP		;	CAPTION			;	caption		;	caption		: 
+Rows set			;	ROWS		;	ROWS			;	rows		;	rows (env)	:
+Row				;	ROW		;	ROW			;	row		;			:
+Cell/column break		;	cb		;	c_break			;	c_break		;	&		:
+New cell/column			;	nc		;	new_c			;	new_c		;	&		:
+Appendix 			;	APD 		;	APPENDIX		;	appendix	;	appendix	:
+&line
+%ROWS
+%TABLE
+
+
+
+> - --------------- - <
+> - doctype: readme - <
+> - --------------- - <
+
+@TABLE
+@CAPTION ReadMe's elements %CAPTION
+@ROWS
+&line
+Element			;	Short tag	;	Long tag 	:
+&line
+ReadMe			;	RM		;	README		:
+Titles elements
+Tables elements 
+Itemize elements
+Cross reference elements
+Directory structure	;	ARB
+Directory	;	DIR
+Subdirectory	;	SUBDIR
+File		;	FILE
+P
+
+&line
+%ROWS
+%TABLE
+
+> - ---------------- - <
+> - doctype: tabular - <
+> - ---------------- - <
+
+@TABLE
+@CAPTION Tabular's elements %CAPTION
+@ROWS
+&line
+Element			;	Short tag	;	Long tag 	:
+&line
+Sheet			;	SH		;	SHEET		:
+Table			;	TBL		;	TABLE		: 
+Caption			;	CAP		;	CAPTION		: 
+Rows set		;	ROWS		;	ROWS		:
+Row			;	ROW		;	ROW		:
+Cell/column break	;	cb		;	c_break		:
+New cell/column		;	nc		;	new_c		:
+&line
+%ROWS
+%TABLE
+
+
+@SHEET
